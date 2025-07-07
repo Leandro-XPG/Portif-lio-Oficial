@@ -1,0 +1,518 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Genos&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+
+
+:root{
+    --color1:#15AAFB;
+    --color2:#4684A5;
+    --color3:#3C4950;
+    --color4:#FA9716;
+    --color5:#BA853F;
+    --color6:#7A6448;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body,html{
+    background-color: black;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/*MENU*/
+.menu{
+    width: 90%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin: auto;
+    position: sticky;
+    top: 0px;
+    background-color:black;
+    z-index: 99999;
+}
+
+
+.menu .navegation ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.menu .navegation ul li a{
+    color: white;
+    text-decoration: none;
+    transition: .3s ease;
+    font-family: 'Genos',sans-serif;
+}.menu .navegation ul li a:hover{
+    color: var(--color1);
+}
+
+
+/*INICIO*/
+
+.inicio{
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    bottom: 0;
+}
+
+.inicio h1{
+    max-width: 600px;
+    color: white;
+    font-size: 64px;
+    font-family: 'Genos',sans-serif;
+    margin-left: 10%;
+}
+
+.inicio h1 span{
+    color: var(--color4);
+}
+.inicio p{
+    color: white;
+    font-family: "Genos",sans-serif;
+    font-size: 18px;
+    margin-left: 10%;
+    max-width: 500px;
+    color: gray;
+}
+
+.inicio .curriculo{
+    width: 100px;
+    height: 40px;
+    background-color: var(--color1);
+    border: none;
+    border-radius: 10px;
+    font-family: 'Genos',sans-serif;
+    font-size: 18px;
+    margin-left: 15%;
+    margin-top: 2%;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: .3s ease;
+}.inicio .contato{
+    width: 100px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid var(--color1);
+    border-radius: 10px;
+    font-family: 'Genos',sans-serif;
+    font-size: 18px;
+    color: var(--color1);
+    cursor: pointer;
+    transition: .3s ease;
+}.inicio .curriculo:hover{
+    box-shadow: 0 0 10px var(--color1);
+}.inicio .contato:hover{
+    box-shadow: 0 0 10px var(--color1);
+    background-color: var(--color1);
+    color: black;
+}
+
+/*Sobre Mim*/
+
+.inicio .about{
+    width: 100%;
+    height: 20vh;
+    position: absolute;
+    bottom:0;
+    border-top: 1px solid rgba(128, 128, 128, 0.200);
+}.inicio h2{
+    color: white;
+    font-family: 'Genos',sans-serif;
+    margin-left: 10%;
+}.inicio .about p{
+    max-width: 100%;
+    line-height: 50px;
+}
+
+.inicio .about .localidade{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 20%;
+    height: 50px;
+}.inicio .about .localidade h3{
+    color: gray;
+    font-family: 'Genos',sans-serif;
+}.inicio .about .localidade p{
+    line-height: 10px;
+    margin-left: 0px;
+    color: white;
+}
+.inicio .about .exp{
+    position: absolute;
+    right: 0;
+    top: 60px;
+    width: 20%;
+    height: 50px;
+}.inicio .about .exp h3{
+    color: gray;
+    font-family: 'Genos',sans-serif;
+}.inicio .about .exp p{
+    line-height: 10px;
+    margin-left: 0;
+    color: white;
+}.inicio .about .hab{
+    position: absolute;
+    right: 0;
+    top: 110px;
+    width: 20%;
+    height: 50px;
+}.inicio .about .hab h3{
+    color: gray;
+    font-family: 'Genos',sans-serif;
+}.inicio .about .hab p{
+    color: white;
+    margin-left: 0;
+    line-height: 10px;
+}
+
+/*PROJETOS*/
+
+.habilidades{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-top: 100vh;
+}
+
+.habilidades .conhecimentos{
+    width: 80%;
+    height: 50vh;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 10px;
+}   
+
+.habilidades .conhecimentos .card{
+    position: relative;
+    width: 150px;
+    height: 120px;
+    border-radius: 40px;
+    box-shadow: 0 0 10px var(--color3);
+    margin-top: 200px;
+    transition: .3s ease;
+    margin: auto;
+}.habilidades .conhecimentos .card:hover{
+    box-shadow: 0 2px 10px var(--color1)
+}
+
+.card h2{
+    color: var(--color1);
+    font-family: 'Genos',sans-serif;
+    position: absolute;
+    left: 50%;
+    bottom: 30%;
+    transform: translateX(-50%);
+}.card p{
+    color: gray;
+    font-family: 'Genos',sans-serif;
+    font-size: 16px;
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translateX(-50%);
+}
+
+.habilidades .conhecimentos h1{
+    color: white;
+    position: absolute;
+    font-size: 64px;
+    font-family: 'Genos',sans-serif;
+    left: 50%;
+    top: 15%;
+    transform: translateX(-50%);
+}
+.formacao{
+    width: 80%;
+    height: 50vh;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}.habilidades .formacao .card{
+    position: relative;
+    width: 650px;
+    height: 250px;
+    box-shadow:0 0 10px gray;
+    border-radius: 20px;
+    margin: auto;
+    transition: .5s ease;
+}.habilidades .formacao .card:hover{
+    box-shadow: 0 0 10px var(--color1);
+}
+.habilidades .formacao .card .icon{
+    width: 60px;
+    height: 60px;
+    border: 1px solid var(--color4);
+    background-color: var(--color5);
+    border-radius: 50%;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+}.habilidades .formacao .card .icon img{
+    width: 30px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%,-50%);
+}
+.habilidades .formacao .card h3{
+    color: white;
+    font-family: 'Genos',sans-serif;
+    font-size: 24px;
+    position: absolute;
+    left: 16%;
+    top: 10%;
+}.habilidades .formacao .card h4{
+    color: gray;
+    font-family: 'Genos',sans-serif;
+    position: absolute;
+    top: 20%;
+    left: 16%;
+}.habilidades .formacao .card p{
+    color: white;
+    font-family: 'Genos',sans-serif;
+    position: absolute;
+    top: 40%;
+    left: 44%;
+}.habilidades .formacao .card span{
+    color: black;
+    position: absolute;
+    bottom: 10%;
+    left: 16%;
+    font-family: 'Genos',sans-serif;
+    font-size: 16px;
+    background-color: var(--color1);
+    padding: 2px;
+    border-radius: 20px;
+    opacity: 70%;
+}
+
+
+/*PROJETOS*/
+.projetos{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.projetos h1{
+    color: white;
+    font-family: 'Genos',sans-serif;
+    font-size: 64px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20%;
+
+}
+
+
+.projetos .carrossel{
+    width: 60%;
+    height: 40vh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border: 2px solid gray;
+}.projetos .controlador{
+    width: 10%;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%,-50%);
+    background-image: linear-gradient(to right,var(--color2),var(--color6));
+    border: 2px solid gray;
+    border-radius: 20px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}.projetos .controlador img{
+    width: 30px;
+    margin: 20px;
+    cursor: pointer;
+    transition: .5s ease;
+}.projetos .controlador img:hover{
+    transform:scale(1.2);
+}
+
+
+.carrossel h3{
+    color: var(--color1);
+    font-family: 'Genos',sans-serif;
+    font-size: 36px;
+    position: absolute;
+    left: 5%;
+    top: 10%;
+}.carrossel p{
+    color: gray;
+    font-family: 'Genos',sans-serif;
+    font-size: 18px;
+    max-width: 600px;
+    position: absolute;
+    left: 5%;
+    top: 30%;
+}.carrossel .tecnologias{
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    left: 5%;
+    top: 60%
+}.carrossel .tecnologias span{
+    color: var(--color4);
+    font-family: 'Genos',sans-serif;
+    font-size: 16px;
+    margin: 5px;
+    cursor: default;
+}
+.carrossel .demo{
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    background-color: var(--color1);
+    border: none;
+    border-radius:20px;
+    width: 80px;
+    height: 30px;
+    font-family: 'Genos',sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease;
+}.carrossel .code{
+    position: absolute;
+    top: 80%;
+    left: 13%;
+    background-color: transparent;
+    border: 1px solid var(--color1);
+    border-radius: 20px;
+    width: 80px;
+    height: 30px;
+    font-family: 'Genos',sans-serif;
+    font-size:16px;
+    color: var(--color1);
+    cursor: pointer;
+    transition: .3s ease;
+}.carrossel .demo:hover{
+    transform:scale(1.1);
+}.carrossel .code:hover{
+    transform: scale(1.1);
+    background-color: var(--color1);
+    color: black;
+}.carrossel img{
+    width: 400px;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform:translateY(-50%)
+}
+
+
+
+
+/*CONTATO*/
+
+.contato{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}.contato h1{
+    color: white;
+    font-family: 'Genos',sans-serif;
+    font-size: 64px;
+    position: absolute;
+    left: 50%;
+    transform:translateX(-50%);
+    top: 20%;
+}
+
+.contato form{
+    width: 500px;
+    height: 600px;
+    background-color: rgba(255, 255, 255, 0.100);
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform:translateX(-50%);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}.contato form input{
+    background-color: black;
+    border: none;
+    border-radius: 20px;
+    width: 300px;
+    height: 35px;
+    padding:5px;
+    color: white;
+}.contato form input::placeholder{
+    color: rgba(128, 128, 128, 0.500);
+}.contato form label{
+    color: white;
+    font-family: 'Genos',sans-serif;
+}.contato form .label-n{
+    position: absolute;
+    top: 16%;
+    left: 20%;
+}.contato form .label-e{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}.contato form .label-ev{
+    position: absolute;
+    top: 44%;
+    left: 20%;
+}
+.contato form #msg{
+    width: 300px;
+    height: 100px;
+    border-radius:20px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    resize: none;
+}.contato form .enviar{
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: var(--color4);
+    transition: .3s ease;
+}.contato form .enviar:hover{
+    border-radius:0;
+    background-color: var(--color5);
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    border-top: 2px solid rgba(255, 255, 255, 0.200);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}footer p{
+    color: gray;
+    font-family: 'Genos',sans-serif;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portifólio</title>
+</head>
+<body>
+
+    <!--MENU-->
+    <header class="menu">
+        <nav class="navegation">
+            <ul>
+                <li><a href="#inicio">Sobre-Mim</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!--INICIO-->
+    <section class="inicio" id="inicio">
+        <h1>Transformando idéias em <span>experiências</span> digitais incríveis.</h1>
+        <p>Me chamo Leandro Barbosa, e sou um desenvolvedor Front End apaixonado por tecnologia!</p>
+
+        <button class="curriculo">Curriculo</button>
+        <button class="contato">Contato</button>
+
+
+        <div class="about">
+            <h2>Sobre-Mim</h2>
+            <p>Sou um desenvolvedor iniciante em FrontEnd! Apaixonado desde pequeno por video-game e tecnologia no geral! Uma combinação de técnica e um olhar de design que fazem o diferencial!</p>
+            <p>Atualmente focado em React, JavaScript, e tecnologias modernas, ajudando empresas a transformar suas ideias em um projeto digital funcional!</p>
+            
+            <div class="localidade">
+                <h3>Residência</h3>
+                <p>Brasil-SP</p>
+            </div>
+
+            <div class="exp">
+                <h3>Experiência</h3>
+                <p>Sem Experiência</p>
+            </div>
+
+            <div class="hab">
+                <h3>Especialidade</h3>
+                <p>Desenvolvedor FrontEnd</p>
+            </div>
+        </div>
+    </section>
+
+    <!--HABILIDADES-->
+    <section class="habilidades" id="habilidades">
+        <div class="conhecimentos">
+
+            <h1>Conhecimento Técnico</h1>
+            <div class="card">
+                <h2>JavaScript</h2>
+                <p>Básico</p>
+            </div>
+            <div class="card">
+                <h2>React</h2>
+                <p>Básico</p>
+            </div>
+            <div class="card">
+                <h2>Node.Js</h2>
+                <p>Básico</p>
+            </div>
+            <div class="card">
+                <h2>Git</h2>
+                <p>Intermediário</p>
+            </div>
+            <div class="card">
+                <h2>MySql</h2>
+                <p>Intermediário</p>
+            </div>
+            <div class="card">
+                <h2>C#</h2>
+                <p>Básico</p>
+            </div>
+        </div>
+
+        <div class="formacao">
+            <div class="card">
+                <div class="icon"><img src="img/cap.svg" alt="cap-university"></div>
+                <h3>Análise e devenvolvimento de sistemas</h3>
+                <h4>UNINTER-2027</h4>
+                <p>Curso completo que abrange lógica de programação, bancos de dados, redes e desenvolvimento de sistemas. Formação focada em tecnologia, inovação e solução de problemas.</p>
+                <span>certificado</span>
+            </div>
+            <div class="card">
+                <div class="icon"><img src="img/cap.svg" alt="cap-university"></div>
+                <h3>C# completo- Programação Orientada a Objetos</h3>
+                <h4>UDEMY-2025</h4>
+                <span>certificado</span>
+            </div>
+        </div>
+    </section>
+
+<!--PROJETOS-->
+    <section class="projetos" id="projetos">
+        <h1>Projetos</h1>
+        <div class="carrossel">
+            <div class="projeto1">
+                <h3>YupiCode</h3>
+                <p>Um projeto acadêmico, uma plataforma educacional, com foco em ensinar jovens e incentiva-los a entrar para o mundo da tecnologia! Conteúdos em formatos de video, resumos, roadmaps, e jogos interativos. </p>
+                <div class="tecnologias">
+                    <span>Html & CSS</span>
+                    <span>javaScript</span>
+                    <span>Node.Js</span>
+                    <span>MySql</span>
+                </div>
+
+                <button onclick="window.location.href='https://leandro-xpg.github.io/YupiCode-FrontEnd/';" class="demo">Ver Demo</button>
+                <button onclick="window.location.href='https://github.com/Leandro-XPG/YupiCode-FrontEnd';"        class="code">Ver Código</button>
+
+                <img src="img/yupiBanner.png" alt="yupi-code">
+            </div>
+        </div>¨
+
+        <div class="controlador">
+            <img src="img/arrow-l.svg" alt="seta-l" class="left">   
+            <img src="img/arrow-r.svg" alt="seta-r" class="right"> 
+        </div>
+    </section>
+
+    <!--CONTATO-->
+    <section class="contato" id="contato">
+        <h1>Entre em Contato</h1>
+
+        <form action="https://formsubmit.co/leandroyupi3@gmail.com" method="POST">
+            <label for="name" class="label-n">Nome</label>
+            <label for="email" class="label-e">Email</label>
+            <label for="enviar" class="label-ev">Mensagem</label>
+            <input type="text" name="name" id="name" placeholder="Seu Nome">
+            <input type="email" name="email" id="email" placeholder="your@gmail.com">
+            <textarea name="msg" id="msg"></textarea>
+            <button type="submit" class="enviar" id="enviar">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>@leandro-2025</p>
+    </footer>
+</body>
+</html>
