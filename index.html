@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <!--MENU-->
+    <!-- ====== MENU DE NAVEGAÇÃO ====== -->
     <header class="menu">
         <nav class="navegation">
             <ul>
@@ -16,29 +16,27 @@
                 <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#contato">Contato</a></li>
-
             </ul>
         </nav>
     </header>
 
-
-    <!--INICIO-->
+    <!-- ====== SEÇÃO INICIAL / SOBRE MIM ====== -->
     <section class="inicio" id="inicio">
         <h1>Transformando idéias em <span>experiências</span> digitais incríveis.</h1>
         <p>Me chamo Leandro Barbosa, e sou um desenvolvedor Front End apaixonado por tecnologia!</p>
 
+        <!-- Botão para download do currículo -->
         <a href="arquivos/Curriculo_Leandro_Barbosa_Pereira.pdf" download> 
             <button class="curriculo">Curriculo</button>
         </a>
+
+        <!-- Botão de rolagem para a seção de contato -->
         <button class="contato" onclick="window.location.href='#contato'">Contato</button>
 
-       
-
-
+        <!-- Bloco com informações pessoais -->
         <div class="about">
             <h2>Sobre-Mim</h2>
             <p>Sou um desenvolvedor Front-End em início de carreira, movido pela paixão por games e tecnologia desde criança. Combinando técnica, criatividade e um olhar apurado para design, busco criar interfaces que encantam e funcionam. Atualmente, estou focado em React, JavaScript e ferramentas modernas, pronto para transformar ideias em experiências digitais reais.</p>
-            
             
             <div class="localidade">
                 <h3>Residência</h3>
@@ -57,89 +55,83 @@
         </div>
     </section>
 
-    <!--HABILIDADES-->
+    <!-- ====== HABILIDADES E FORMAÇÕES ====== -->
     <section class="habilidades" id="habilidades">
         <div class="conhecimentos">
-
             <h1>Conhecimento Técnico</h1>
-            <div class="card">
-                <h2>JavaScript</h2>
-                <p>Básico</p>
-            </div>
-            <div class="card">
-                <h2>React</h2>
-                <p>Básico</p>
-            </div>
-            <div class="card">
-                <h2>Node.Js</h2>
-                <p>Básico</p>
-            </div>
-            <div class="card">
-                <h2>Git</h2>
-                <p>Intermediário</p>
-            </div>
-            <div class="card">
-                <h2>MySql</h2>
-                <p>Intermediário</p>
-            </div>
-            <div class="card">
-                <h2>C#</h2>
-                <p>Básico</p>
-            </div>
+
+            <!-- Cards com as tecnologias -->
+            <div class="card"><h2>JavaScript</h2><p>Básico</p></div>
+            <div class="card"><h2>React</h2><p>Básico</p></div>
+            <div class="card"><h2>Node.Js</h2><p>Básico</p></div>
+            <div class="card"><h2>Git</h2><p>Intermediário</p></div>
+            <div class="card"><h2>MySql</h2><p>Intermediário</p></div>
+            <div class="card"><h2>C#</h2><p>Básico</p></div>
         </div>
 
+        <!-- Formação acadêmica e cursos -->
         <div class="formacao">
             <h1>Formações</h1>
+
             <div class="card">
                 <div class="icon"><img src="img/cap.svg" alt="cap-university"></div>
-                <h3>Análise e devenvolvimento de sistemas</h3>
+                <h3>Análise e desenvolvimento de sistemas</h3>
                 <h4>UNINTER-2027</h4>
                 <p>Curso completo que abrange lógica de programação, bancos de dados, redes e desenvolvimento de sistemas. Formação focada em tecnologia, inovação e solução de problemas.</p>
             </div>
+
             <div class="card">
                 <div class="icon"><img src="img/cap.svg" alt="cap-university"></div>
-                <h3>C# completo- Programação Orientada a Objetos</h3>
+                <h3>C# completo - Programação Orientada a Objetos</h3>
                 <h4>UDEMY-2025</h4>
                 <p>Curso que ensina os fundamentos da programação orientada a objetos com C#, incluindo classes, herança, polimorfismo e encapsulamento. Ideal para quem deseja desenvolver aplicações robustas e escaláveis.</p>
             </div>
         </div>
     </section>
 
-<!--PROJETOS-->
+    <!-- ====== PROJETOS ====== -->
     <section class="projetos" id="projetos">
         <h1>Projetos</h1>
+
+        <!-- Carrossel de projetos (por enquanto apenas um projeto) -->
         <div class="carrossel">
             <div class="projeto1">
                 <h3>YupiCode</h3>
-                <p>Um projeto acadêmico, uma plataforma educacional, com foco em ensinar jovens e incentiva-los a entrar para o mundo da tecnologia! Conteúdos em formatos de video, resumos, roadmaps, e jogos interativos. </p>
+                <p>Um projeto acadêmico, uma plataforma educacional, com foco em ensinar jovens e incentivá-los a entrar para o mundo da tecnologia! Conteúdos em formatos de vídeo, resumos, roadmaps e jogos interativos.</p>
+
                 <div class="tecnologias">
                     <span>Html & CSS</span>
-                    <span>javaScript</span>
+                    <span>JavaScript</span>
                     <span>Node.Js</span>
                     <span>MySql</span>
                 </div>
 
+                <!-- Botões do projeto -->
                 <button onclick="window.location.href='https://leandro-xpg.github.io/YupiCode-FrontEnd/';" class="demo">Ver Demo</button>
-                <button onclick="window.location.href='https://github.com/Leandro-XPG/YupiCode-FrontEnd';"        class="code">Ver Código</button>
+                <button onclick="window.location.href='https://github.com/Leandro-XPG/YupiCode-FrontEnd';" class="code">Ver Código</button>
 
+                <!-- Imagem ilustrativa -->
                 <img src="img/yupiBanner.png" alt="yupi-code">
             </div>
-        </div>¨
+        </div>
 
+        <!-- Setas do carrossel ainda nao funcional, pois ainda nao possuo mais projetos relevantes para essa aba! -->
         <div class="controlador">
             <img src="img/arrow-l.svg" alt="seta-l" class="left">   
             <img src="img/arrow-r.svg" alt="seta-r" class="right"> 
         </div>
     </section>
 
-    <!--CONTATO-->
+    <!-- ====== CONTATO ====== -->
     <section class="contato" id="contato">
         <h1>Entre em Contato</h1>
 
+        <!-- Formulário de contato via FormSubmit -->
         <form action="https://formsubmit.co/leandroyupi3@gmail.com" method="POST">
             <label for="name" class="label-n">Nome</label>
             <label for="email" class="label-e">Email</label>
             <label for="enviar" class="label-ev">Mensagem</label>
+            
             <input type="text" name="name" id="name" placeholder="Seu Nome">
             <input type="email" name="email" id="email" placeholder="your@gmail.com">
             <textarea name="msg" id="msg"></textarea>
@@ -147,11 +139,10 @@
         </form>
     </section>
 
+    <!-- ====== RODAPÉ ====== -->
     <footer>
         <p>@leandro-2025</p>
     </footer>
 
-
-    <script src="carrossell.js"></script>
 </body>
 </html>
