@@ -84,6 +84,8 @@ html{
     margin-left: 10%;
     max-width: 500px;
     color: gray;
+}.inicio p span{
+    color: white;
 }
 
 .inicio .curriculo{
