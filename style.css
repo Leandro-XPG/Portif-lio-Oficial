@@ -131,8 +131,8 @@ html{
     font-family: 'Genos',sans-serif;
     margin-left: 10%;
 }.inicio .about p{
-    max-width: 100%;
-    line-height: 50px;
+    max-width: 70%;
+    line-height: 30px;
 }
 
 .inicio .about .localidade{
@@ -337,7 +337,7 @@ html{
     left: 50%;
     top: 80%;
     transform: translate(-50%,-50%);
-    background-image: linear-gradient(to right,var(--color2),var(--color6));
+    background-color: white;
     border: 2px solid gray;
     border-radius: 20px;
     border: none;
