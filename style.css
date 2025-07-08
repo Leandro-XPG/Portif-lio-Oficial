@@ -292,17 +292,13 @@ html{
     position: absolute;
     top: 40%;
     left: 44%;
-}.habilidades .formacao .card span{
-    color: black;
+}.habilidades .formacao h1{
     position: absolute;
-    bottom: 10%;
-    left: 16%;
+    color: white;
     font-family: 'Genos',sans-serif;
-    font-size: 16px;
-    background-color: var(--color1);
-    padding: 2px;
-    border-radius: 20px;
-    opacity: 70%;
+    font-size: 64px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 
@@ -333,6 +329,7 @@ html{
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
     border: 2px solid gray;
+    overflow: hidden;
 }.projetos .controlador{
     width: 10%;
     height: 40px;
